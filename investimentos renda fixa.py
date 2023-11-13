@@ -43,7 +43,7 @@ def calcula_retorno(aporte_inicial, taxa_juros_ano, aporte_mensal, periodo_meses
 def calcula_final_com_ir(aporte_inicial, taxa_juros_ano, aporte_mensal, periodo_meses):
     dias = periodo_meses * 30
     investimentos = aporte_inicial + (aporte_mensal * periodo_meses)
-
+    usuario = nome_capitulado
     # Verifica a quantidade de dias para determinar a alíquota de imposto de renda
     if dias < 181:
         redimento_bruto = calcula_retorno(aporte_inicial, taxa_juros_ano, aporte_mensal, periodo_meses)
@@ -78,6 +78,7 @@ def calcula_final_com_ir(aporte_inicial, taxa_juros_ano, aporte_mensal, periodo_
 def calcula_final_sem_ir(aporte_inicial, taxa_juros_ano, aporte_mensal, periodo_meses):
     investimentos = aporte_inicial + (aporte_mensal * periodo_meses)
     acumulado = calcula_retorno(aporte_inicial, taxa_juros_ano, aporte_mensal, periodo_meses)
+    usuario = nome_capitulado
     juros_totais = acumulado - investimentos
     print(f"{usuario} seu investimento de {periodo_meses} meses poderá render R$ {acumulado:.2f} líquidos de IR")
     print(f"Sendo R$ {investimentos} de investimentos e R$ {juros_totais:.2f} de juros")
@@ -116,7 +117,6 @@ while True:
     
 
 # Limpa a tela do console
-
 
 while True:
     # Exibe as opções do menu para o usuário
