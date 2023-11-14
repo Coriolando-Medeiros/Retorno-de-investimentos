@@ -172,6 +172,4 @@ while True:
         # Se houver erro na escolha da opção
         limpar_tela()
         print("Valor inválido. Certifique-se de usar um número válido")
-    else:
-        # Se a opção não for válida, exibe uma mensagem de opção inválida
-        print("Opção inválida!")
+
