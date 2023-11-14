@@ -9,7 +9,7 @@ Segue algumas telas:
 
 Tela de login
 
-![image](https://github.com/Coriolando-Medeiros/retorno-de-investimentos/assets/107105546/50e266e4-5090-42e1-9f18-687aaf8d77f7)
+![image](https://github.com/Coriolando-Medeiros/retorno-de-investimentos/assets/107105546/9662d869-c4c2-40fd-951e-015ef7483b50)
 
 
 Tela inicial de menu
@@ -21,4 +21,6 @@ Tela inicial de menu
 
 Tela com a apresentação das informações
 
-![image](https://github.com/Coriolando-Medeiros/retorno-de-investimentos/assets/107105546/0ef4676e-3f3b-4a9e-99c8-feda301942a5)
+
+![image](https://github.com/Coriolando-Medeiros/retorno-de-investimentos/assets/107105546/85c9afc5-ce5e-4ddb-8135-cb05889a4882)
+
