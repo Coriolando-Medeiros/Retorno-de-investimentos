@@ -134,8 +134,30 @@ while True:
                     break
 
                 elif opcao > 0 and opcao < 8:
+                        limpar_tela()
                         # Se a opção for maior que zero, executa o bloco de código dentro do try
                         try:
+                            if opcao == 1:
+                                print("Tesouro Direto")
+                                print("")
+                            elif opcao == 2:
+                                print("CDB")
+                                print("")
+                            elif opcao == 3:
+                                print("LCI")
+                                print("")
+                            elif opcao == 4:
+                                print("LCA")
+                                print("")
+                            elif opcao == 5:
+                                print("Poupança")
+                                print("")
+                            elif opcao == 6:
+                                print("Debêntures")
+                                print("")
+                            else:
+                                print("Fundos de Renda Fixa")
+                                print("")
                             # Tenta converter e obter o valor do investimento inicial, mensal e taxa de juros anual
                             aporte_inicial = float(input("Investimento inicial: ").replace(',', '.'))
                             if aporte_inicial > 0:
@@ -146,19 +168,54 @@ while True:
                                         periodo_meses = int(input("Tempo de investimentos - meses: "))
                                         # Verifica a opção escolhida e chama a função correspondente
                                         if opcao == 1:
+                                            limpar_tela()
+                                            print("Tesouro Direto")
+                                            print("")
                                             calcula_final_com_ir(aporte_inicial, taxa_juros_ano, aporte_mensal, periodo_meses)
+                                            print("")
+                                            continua = input("Pressione qualquer tecla para continuar!")
                                         elif opcao == 2:
+                                            limpar_tela()
+                                            print("CDB")
+                                            print("")
                                             calcula_final_com_ir(aporte_inicial, taxa_juros_ano, aporte_mensal, periodo_meses)
+                                            print("")
+                                            continua = input("Pressione qualquer tecla para continuar!")
                                         elif opcao == 3:
+                                            limpar_tela()
+                                            print("LCI")
+                                            print("")
                                             calcula_final_sem_ir(aporte_inicial, taxa_juros_ano, aporte_mensal, periodo_meses)
+                                            print("")
+                                            continua = input("Pressione qualquer tecla para continuar!")
                                         elif opcao == 4:
+                                            limpar_tela()
+                                            print("LCA")
+                                            print("")
                                             calcula_final_sem_ir(aporte_inicial, taxa_juros_ano, aporte_mensal, periodo_meses)
+                                            print("")
+                                            continua = input("Pressione qualquer tecla para continuar!")
                                         elif opcao == 5:
+                                            limpar_tela()
+                                            print("Poupança")
+                                            print("")
                                             calcula_final_sem_ir(aporte_inicial, taxa_juros_ano, aporte_mensal, periodo_meses)
+                                            print("")
+                                            continua = input("Pressione qualquer tecla para continuar!")
                                         elif opcao == 6:
+                                            limpar_tela()
+                                            print("Debêntures")
+                                            print("")
                                             calcula_final_com_ir(aporte_inicial, taxa_juros_ano, aporte_mensal, periodo_meses)
+                                            print("")
+                                            continua = input("Pressione qualquer tecla para continuar!")
                                         elif opcao == 7:
+                                            limpar_tela()
+                                            print("Fundos de Renda Fixa")
+                                            print("")
                                             calcula_final_com_ir(aporte_inicial, taxa_juros_ano, aporte_mensal, periodo_meses)
+                                            print("")
+                                            continua = input("Pressione qualquer tecla para continuar!")
                                     else:
                                         print("Taxa de juros anual inválida!")
                                 else:
