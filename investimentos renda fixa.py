@@ -52,6 +52,7 @@ def calcula_final_com_ir(aporte_inicial, taxa_juros_ano, aporte_mensal, periodo_
         acumulado = rendimentos_ir + investimentos
         print(f"{usuario} seu investimento de {periodo_meses} meses poderá render R$ {acumulado:.2f} líquidos de IR")
         print(f"Sendo R$ {investimentos} de investimentos e R$ {juros_totais:.2f} de juros  de juros totais e R$ {rendimentos_ir:.2f} líquidos")
+        print(f"Pagará R$ {juros_totais-rendimentos_ir:.2f} de IR")
     elif dias > 181 and dias < 361:
         redimento_bruto = calcula_retorno(aporte_inicial, taxa_juros_ano, aporte_mensal, periodo_meses)
         juros_totais = redimento_bruto - investimentos
@@ -59,6 +60,7 @@ def calcula_final_com_ir(aporte_inicial, taxa_juros_ano, aporte_mensal, periodo_
         acumulado = rendimentos_ir + investimentos
         print(f"{usuario} seu investimento de {periodo_meses} meses poderá render R$ {acumulado:.2f} líquidos de IR")
         print(f"Sendo R$ {investimentos} de investimentos e R$ {juros_totais:.2f} de juros  de juros totais e R$ {rendimentos_ir:.2f} líquidos")
+        print(f"Pagará R$ {juros_totais-rendimentos_ir:.2f} de IR")
     elif dias > 361 and dias < 721:
         redimento_bruto = calcula_retorno(aporte_inicial, taxa_juros_ano, aporte_mensal, periodo_meses)
         juros_totais = redimento_bruto - investimentos
@@ -66,6 +68,7 @@ def calcula_final_com_ir(aporte_inicial, taxa_juros_ano, aporte_mensal, periodo_
         acumulado = rendimentos_ir + investimentos
         print(f"{usuario} seu investimento de {periodo_meses} meses poderá render R$ {acumulado:.2f} líquidos de IR")
         print(f"Sendo R$ {investimentos} de investimentos e R$ {juros_totais:.2f} de juros  de juros totais e R$ {rendimentos_ir:.2f} líquidos")
+        print(f"Pagará R$ {juros_totais-rendimentos_ir:.2f} de IR")
     elif dias > 721:
         rendimento_bruto = calcula_retorno(aporte_inicial, taxa_juros_ano, aporte_mensal, periodo_meses)
         juros_totais = rendimento_bruto - investimentos
@@ -73,6 +76,7 @@ def calcula_final_com_ir(aporte_inicial, taxa_juros_ano, aporte_mensal, periodo_
         acumulado = rendimentos_ir + investimentos
         print(f"{usuario} seu investimento de {periodo_meses} meses poderá render R$ {acumulado:.2f} líquidos de IR")
         print(f"Sendo R$ {investimentos} de investimentos e R$ {juros_totais:.2f} de juros  de juros totais e R$ {rendimentos_ir:.2f} líquidos")
+        print(f"Pagará R$ {juros_totais-rendimentos_ir:.2f} de IR")
 
 # Define uma função para calcular o retorno de investimentos sem imposto de renda
 def calcula_final_sem_ir(aporte_inicial, taxa_juros_ano, aporte_mensal, periodo_meses):
