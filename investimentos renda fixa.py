@@ -122,8 +122,9 @@ while True:
         else:
             print("Usuário ou senha incorretos.")
     elif login == "N"  or login == "n":
-        print("Usuário desconhecido")
-        usuario = "Anonimo"
+        print("Login sem usuário")
+        usuario = "anônimo"
+        nome_capitulado = capwords(usuario)
         break
     else:
         limpar_tela()
@@ -135,6 +136,7 @@ while True:
 
 while True:
     # Exibe as opções do menu para o usuário
+    #usuario = "anônimo"
     menu()
     # Solicita a opção do usuário e converte para um número inteiro
     try:
