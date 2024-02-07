@@ -106,18 +106,29 @@ print("Sistema de cálculo de retorno de investimentos")
 
 # Loop principal
 while True:
-    # Solicita o nome de usuário e senha
-    usuario = input("Usuário: ")
-    senha = stdiomask.getpass(prompt= 'Senha: ', mask='*')
-    nome_capitulado = capwords(usuario)
-    
-    # Verifica o login com base no nome de usuário e senha
-    if verificar_login(usuario, senha):
-        limpar_tela()
-        print(f"Login efetuado! {nome_capitulado}")
+    print("Deseja fazer login? S/N")
+    login = input("Opção: ")
+    if login == "S"  or login == "s":
+        # Solicita o nome de usuário e senha
+        usuario = input("Usuário: ")
+        senha = stdiomask.getpass(prompt= 'Senha: ', mask='*')
+        nome_capitulado = capwords(usuario)
+        
+        # Verifica o login com base no nome de usuário e senha
+        if verificar_login(usuario, senha):
+            limpar_tela()
+            print(f"Login efetuado! {nome_capitulado}")
+            break
+        else:
+            print("Usuário ou senha incorretos.")
+    elif login == "N"  or login == "n":
+        print("Usuário desconhecido")
+        usuario = "Anonimo"
         break
     else:
-        print("Usuário ou senha incorretos.")
+        limpar_tela()
+        print("Opção inválida")
+        print("Tente novamente!")
     
 
 # Limpa a tela do console
